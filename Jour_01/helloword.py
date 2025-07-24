@@ -1,7 +1,5 @@
 #Exercice 1
 
-python
-
 #Addition
 print(3 + 4)
 #subtraction(-)
