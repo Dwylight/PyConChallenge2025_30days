@@ -66,12 +66,12 @@ print(it_companies[:3])
 #19
 print(it_companies[-3:])
 
-#20 ?????
-print(it_companies)
+#20 
+print(it_companies[int(len(it_companies)/2)])
 
 #21
 it_companies.remove(it_companies[0])
-print(it_companies)
+print(it_companies[int(len(it_companies)/2)])
 
 #22
 it_companies.remove(it_companies[int(len(it_companies)/2)])
