@@ -73,7 +73,9 @@ print(it_companies)
 it_companies.remove(it_companies[0])
 print(it_companies)
 
-#22???
+#22
+it_companies.remove(it_companies[int(len(it_companies)/2)])
+print(it_companies)
 
 #23
 it_companies.pop()
