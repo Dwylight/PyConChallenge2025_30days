@@ -51,7 +51,56 @@ elif  score >= 50 and score <= 59 :
 elif  score >= 0 and score <= 49 :
     print("You are in grade F")
 else :
-    score = float(input("EEnter a valid number!!!"))
+    score = float(input("Enter a valid number!!!"))
+
+#2
+month = input("Enter the month: ")
+if month in ["September", "October", "November"]:
+    print("The season is Autumn")
+elif month in ["December", "January", "February"]:
+    print("The season is Winter")
+elif month in ["March", "April", "May"]:
+    print('The season is spring')
+else :
+    print('The season in Summer')
+
+#3
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruit_user = input("Enter the fruit")
+if fruit_user in fruits:
+    print('That fruit already exist in the list')
+else :
+    fruits.append(fruit_user)
+    print(fruits)
+
+#Level 3
+
+person = {
+'first_name': 'Damy',
+'last_name': 'Batch',
+'age': 250,
+'country': 'Togo',
+'is_marred': False,
+'skills': ['JavaScript', 'React', 'Node', 'MongoDB',
+'Python'],
+'address': {
+'street': 'Space street',
+'zipcode': '02210'
+}
+}
+
+cheking_skills = "skills"  in person.keys()
+print("The person dictionary has skills key :", cheking_skills)
+if cheking_skills == True:
+    print(person["skills"][int(len("skills")/2)-1])
+
+
+
+
+
+    
+
+
 
 
     
