@@ -29,12 +29,14 @@ else:
 
 
 #3
-number_one = int(input('Enter number one'))
-number_two = int(input('Enter number one'))
+number_one = int(input('Enter number one '))
+number_two = int(input('Enter number one '))
 if number_one > number_two :
     print(number_one,"is greater than",number_two)
-else :
+elif  number_one < number_two :
     print(number_two,"is greater than",number_one)
+else :
+    print(number_two,"equal to",number_one)
 
 #Level 2
 
@@ -66,7 +68,7 @@ else :
 
 #3
 fruits = ['banana', 'orange', 'mango', 'lemon']
-fruit_user = input("Enter the fruit")
+fruit_user = input("Enter the fruit ")
 if fruit_user in fruits:
     print('That fruit already exist in the list')
 else :
@@ -80,7 +82,7 @@ person = {
 'last_name': 'Batch',
 'age': 250,
 'country': 'Togo',
-'is_marred': False,
+'is_married': False,
 'skills': ['JavaScript', 'React', 'Node', 'MongoDB',
 'Python'],
 'address': {
@@ -93,6 +95,23 @@ cheking_skills = "skills"  in person.keys()
 print("The person dictionary has skills key :", cheking_skills)
 if cheking_skills == True:
     print(person["skills"][int(len("skills")/2)-1])
+if cheking_skills == True:
+   python_skills = "Python" in person["skills"]
+   print("Python skills:", python_skills)
+if person["skills"] == ["JavaScript", "React"]:
+    print('He is a front end developer')
+elif ["Node","Python", "MongoDB"] in person["skills"]:
+    print('He is a fullstack developer')
+else :
+    print("unknown title")
+
+if person["is_married"] == True and country == "Finland":
+    print(f"{person['first_name']} {person['last_name']} lives in Finland. He is married. ")
+
+
+    
+       
+
 
 
 
